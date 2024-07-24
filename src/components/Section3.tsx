@@ -1,3 +1,6 @@
+import viviendas1 from "../assets/viviendas_1.jpg"
+import viviendas2 from "../assets/viviendas_2.jpg"
+
 const Section3 = () => {
   return (
     <section className="section3">
@@ -16,9 +19,9 @@ const Section3 = () => {
       </article>
       <section className="section3_1">
         <div className="section3_1_img">
-          <img src="./src/assets/viviendas_1.jpg" alt="viviendas" />
+          <img src={viviendas1} alt="viviendas" />
         </div>
-        <div>
+        <div className="section3_1_div">
           <article>
             <h3>Lorem Ipsum</h3>
             <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -33,7 +36,7 @@ const Section3 = () => {
         </div>
       </section>
       <section className="section3_2">
-        <div>
+        <div className="section3_2_div">
           <article>
             <h3>Lorem Ipsum</h3>
             <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -47,7 +50,7 @@ const Section3 = () => {
           </article>
         </div>
         <div className="section3_2_img">
-          <img src="./src/assets/viviendas_2.jpg" alt="viviendas" />
+          <img src={viviendas2} alt="viviendas" />
         </div>
       </section>
     </section>

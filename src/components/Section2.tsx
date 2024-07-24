@@ -1,4 +1,6 @@
 import { Parallax} from "react-scroll-parallax"
+import ramaDerecha from "../assets/rama_derecha.png"
+import hojasAbajo from "../assets/hojas_abajo.png"
 
 const Section2 = () => {
   return (
@@ -11,8 +13,8 @@ const Section2 = () => {
              </article>
           </Parallax>
         </div>
-          <img className="hojas_derecha2" src="./src/assets/rama_derecha.png" alt="hojas de arbol" />
-           <img className="hojas_abajo" src="./src/assets/hojas_abajo.png" alt="hojas de arbol" />
+          <img className="hojas_derecha2" src={ramaDerecha} alt="hojas de arbol" />
+           <img className="hojas_abajo" src={hojasAbajo} alt="hojas de arbol" />
     </section>
   )
 }
