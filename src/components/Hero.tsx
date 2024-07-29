@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import video from "../assets/Introfilm-HD-KeyVisual.mp4";
+import videoMovil from "../assets/Introfilm-HD-KeyVisual-mobile.mp4"
 
 const Hero = () => {
   const [text, setText] = useState("Aqua Verde");
@@ -43,10 +44,13 @@ const Hero = () => {
 
   return (
     <header className="hero">
-      <video ref={videoRef} src={video} autoPlay muted />
-      <h1 className={`fade-text ${isChanging ? "fade-out" : "fade-in"}`}>
+      <video className="videoHero" ref={videoRef} src={video} autoPlay muted />
+      <video className="videoHeroMovil" ref={videoRef} src={videoMovil} autoPlay muted />
+      <div className="titulo">
+        <h1 className={`fade-text ${isChanging ? "fade-out" : "fade-in"}`}>
         {text}
       </h1>
+      </div>
     </header>
   );
 };
