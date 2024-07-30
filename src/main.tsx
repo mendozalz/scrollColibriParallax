@@ -5,21 +5,22 @@ import Nube from "./components/Nube";
 import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import VIdeoBg from "./components/VIdeoBg";
+import Menu from "./components/Menu";
 
 export function Main() {
-
   return (
-  <ParallaxProvider>
-    <div className="main">
-      <Hero/>
-      <Nube/>
-      <Section1/>
-      <Section2/>
-      <Section3/>
-      <Section1/>
-      <Section2/>
-      <VIdeoBg/>
-    </div>
-  </ParallaxProvider>
+    <ParallaxProvider>
+      <div className="main">
+        <Menu/>
+        <Hero />
+        <Nube />
+        <Section1 />
+        <Section2 />
+        <Section3 />
+        <Section1 />
+        <Section2 />
+        <VIdeoBg />
+      </div>
+    </ParallaxProvider>
   );
 }
