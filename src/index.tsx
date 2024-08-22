@@ -1,9 +1,11 @@
 import { createRoot } from 'react-dom/client';
 import { Main } from './main';
-import './index.css'
-
+import './index.css';
 
 const container = document.querySelector('#root');
-const root = createRoot(container);
-
-root.render(<Main />);
+if (container) { 
+  const root = createRoot(container);
+  root.render(<Main />);
+} else {
+  console.error('No se encontró el elemento con el ID "root".');
+}
