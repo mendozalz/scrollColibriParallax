@@ -1,0 +1,134 @@
+div,
+p {
+  color: #f0e4ba;
+  text-shadow: 1px 1px 1px #ffffff00;
+}
+
+form {
+  padding: 16px;
+  width: 500px;
+  z-index: 1;
+}
+
+.tituloForm {
+  font-size: 25px;
+  position: relative;
+  height: 70px;
+}
+
+span.letters.letters-2 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+/* Oculta los spinners en Chrome, Safari, Edge y Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Oculta los spinners en Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.segment {
+  padding: 32px 0;
+  text-align: center;
+}
+
+button,
+input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #ebecf02d;
+  text-shadow: 1px 1px 0 #f0e4ba;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 5px #f0e4ba8a, inset -5px -5px 10px #f0e4ba;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #f0e4ba8a, inset -1px -1px 2px #f0e4ba;
+}
+
+button {
+  color: #61677c;
+  font-weight: bold;
+  box-shadow: -5px 2px 20px #d3c9a4, 2px 2px 5px #f0e4ba8a;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+button.unit .icon {
+  margin-right: 0;
+}
+button.red {
+  display: block;
+  width: 100%;
+  color: #666e0a;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-group label {
+  margin: 0;
+  flex: 1;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    padding: 16px;
+    width: 350px;
+    z-index: 1;
+  }
+  .tituloForm {
+    font-size: 20px;
+    position: relative;
+    height: 70px;
+  }
+  .segment {
+    padding: 20px 0;
+    text-align: center;
+  }
+}

@@ -1,14 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Uso en CSS:
+font-family: 'Playfair Display', serif;
+font-family: 'Lato', sans-serif;
+*/
+
 *,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  --sb-track-color: #f4cb84;
+  --sb-thumb-color: #666e0a;
+  --sb-size: 3px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
 }
 
 .main {
   position: relative;
   background-color: #F7EFE1;
+}
+
+/* Fuente para el hero */
+.hero-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  width: 50%;
+}
+
+/* Fuentes para el contenido */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.content-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .videoColibri {
@@ -48,7 +108,6 @@ body {
 
 h1 {
   color: black;
-  position: absolute;
 }
 
 .fade-text {
@@ -73,8 +132,10 @@ h1 {
 .titulo {
   width: 100%;
   height: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
 }
 .nube {
   background-image: url(./assets/nube.png);
@@ -97,6 +158,45 @@ h1 {
 .mouseGif {
   display: none;
 }
+
+/* Card Expand*/
+
+.mainCard .options {
+  margin-top: 10%;
+}
+
+.mainCard .banner{
+  width: 50%;
+  margin: 0 auto !important;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);  
+  padding: 1.25rem;
+  background-color: #ffffff93;
+  backdrop-filter: blur(10px);
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.mainCard .banner p{
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #666e0a;
+}
+
+.mainCard img.hojas_derecha1 {
+  width: 90%;
+  height: auto;
+  right: 10px;
+  top: 20%;
+  height: auto;
+  position: absolute;
+}
+
 
 /* Section #1 */
 
@@ -287,25 +387,80 @@ article {
   width: 50% !important;
 }
 
+@media screen and (min-width:1201px) and (max-width:1300px){
+  .mainCard .banner{
+    width: 70%;
+    
+}
+.mainCard .options {
+  margin-top: 10%;
+}
+}
+
+@media screen and (min-width:601px) and (max-width:1200px){
+  .titulo {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    place-items: center;
+  }
+
+  .hero-text {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  .videoHeroMovil {
+    display: none;
+  }
+
+  .nube {
+    background-image: url("/nube-0f6e57.png");
+    position: absolute;
+    z-index: 9;
+    width: 100vw;
+    height: 60vh;
+}
+
+.mouseGifBlanco {
+  top: 13%;
+}
+
+.section1 .banner{
+  width: 83.333333%;
+}
+
+}
+
 @media screen and (max-width: 600px) {
   .hero {
     position: relative;
     display: grid;
     place-items: baseline;
     width: 100%;
-    height: 48vh;
+    height: 80vh;
     z-index: 9;
   }
   .titulo {
     width: 100%;
-    height: 40vh;
-    display: grid;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     place-items: center;
   }
+
+  .hero-text {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
   .videoHeroMovil {
     display: block;
     width: 100vw;
-    height: auto;
+    height: 80vh;
     position: absolute;
     object-fit: cover;
     z-index: 1;
@@ -333,7 +488,7 @@ article {
   .mouseGif {
     position: absolute;
     display: block;
-    top: 10.5%;
+    top: 16.5%;
     width: 70px;
     z-index: 9;
   }
@@ -343,6 +498,11 @@ article {
   }
 
   /* Section #1 */
+
+  .section1 .banner{
+    font-size: 1.5rem;
+    margin: 2.5rem;
+  }
 
   .section1,
   .section2 {
