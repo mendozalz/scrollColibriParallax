@@ -1,0 +1,224 @@
+.mainCard {
+  margin-top: 10%;
+  position: relative;
+}
+
+.banner {
+  width: 50%;
+  margin: 0 auto !important;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.25rem;
+  background-color: #ffffff93;
+  backdrop-filter: blur(10px);
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.banner p {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: #666e0a;
+}
+
+.mainCard_titulo {
+  position: absolute;
+  color: black;
+  text-align: center;
+  top: 23%;
+  left: 40%;
+  transform: translateX(-30%);
+}
+
+.mainCard_titulo h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.mainCard_titulo p {
+  color: black;
+  line-height: 30px;
+}
+
+.mainCard img.hojas_derecha1 {
+  width: 90%;
+  height: auto;
+  right: 10px;
+  top: 20%;
+  height: auto;
+  position: absolute;
+}
+
+.containerExpandCard {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  height: 100vh;
+  max-height: 400px;
+  z-index: 99;
+  position: relative;
+  margin-top: 20%;
+}
+
+.containerExpandCard .cont {
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slide {
+  min-width: 10px;
+  width: 50px;
+  height: 100%;
+  justify-content: start;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  /* box-shadow: 3px 3px 5px black; */
+  opacity: 0.5;
+}
+
+.slide-content {
+  display: flex;
+  padding: 8px 5px;
+}
+
+.active {
+  flex-grow: 1;
+  transition-duration: 1s;
+  opacity: 1;
+  padding: 0 10px;
+  border-radius: 25px;
+  padding-bottom: 10px;
+}
+
+.nonActive {
+  flex-grow: 0;
+  opacity: 1;
+  transition-duration: 1s;
+}
+
+.nonActive .slide-content .info {
+  display: none;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--defaultBackground);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+
+.info > div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: transparent;
+  scrollbar-width: none;
+}
+
+.info .sub {
+  transition-delay: 0.1s;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 700px) {
+  .containerExpandCard {
+    padding: 2px;
+    margin-top: 45%;
+  }
+  .hojas_derecha1 {
+    display: none;
+  }
+  .banner {
+    width: 90%;
+  }
+  .slide {
+    min-width: 5px;
+    width: 2px;
+    margin: 0 1px;
+  }
+  .slide-content {
+    display: flex;
+    padding: 5px 15px;
+  }
+  .active {
+    border-radius: 25px;
+    flex-grow: 1;
+    transition-duration: 1s;
+    opacity: 1;
+    padding: 0 0px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+  }
+  .nonActive {
+    flex-grow: 0;
+    opacity: 0.5;
+    transition-duration: 1s;
+  }
+  .containerExpandCard .cont {
+    gap: 0px !important;
+  }
+  .slide {
+    gap: 0px;
+  }
+
+  .sub {
+    color: white;
+  }
+
+  .mainCard_titulo {
+    position: absolute;
+    color: black;
+    text-align: center;
+    top: 22%;
+    width: 100%;
+    left: 0%;
+    transform: translateX(0%);
+  }
+
+  .mainCard_titulo h2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .mainCard_titulo p {
+    color: black;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .section2 img.hojas_abajo {
+    margin-bottom: -4px;
+  }
+}

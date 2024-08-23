@@ -7,6 +7,7 @@ import Section3 from "./components/Section3";
 import VIdeoBg from "./components/VIdeoBg";
 import Menu from "./components/Menu";
 import SectionExpandCards from "./components/SectionExpandCards";
+import ImageSlider from "./components/ImageSlider ";
 
 export function Main() {
   return (
@@ -15,7 +16,7 @@ export function Main() {
         <Menu/>
         <Hero />
         <Nube />
-        <SectionExpandCards/>
+        <ImageSlider/>
         <Section2 />
         <Section3 />
         <Section1 />

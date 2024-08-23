@@ -159,43 +159,7 @@ h1 {
   display: none;
 }
 
-/* Card Expand*/
 
-.mainCard .options {
-  margin-top: 10%;
-}
-
-.mainCard .banner{
-  width: 50%;
-  margin: 0 auto !important;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);  
-  padding: 1.25rem;
-  background-color: #ffffff93;
-  backdrop-filter: blur(10px);
-  margin: 0.5rem;
-  border-radius: 0.5rem;
-}
-
-.mainCard .banner p{
-  width: 100%;
-  max-width: 100%;
-  font-size: 1.25rem;
-  font-weight: 600;
-  text-align: center;
-  color: #666e0a;
-}
-
-.mainCard img.hojas_derecha1 {
-  width: 90%;
-  height: auto;
-  right: 10px;
-  top: 20%;
-  height: auto;
-  position: absolute;
-}
 
 
 /* Section #1 */
@@ -388,7 +352,7 @@ article {
 }
 
 @media screen and (min-width:1201px) and (max-width:1300px){
-  .mainCard .banner{
+  .banner{
     width: 70%;
     
 }
@@ -488,7 +452,7 @@ article {
   .mouseGif {
     position: absolute;
     display: block;
-    top: 16.5%;
+    top: 14.4%;
     width: 70px;
     z-index: 9;
   }

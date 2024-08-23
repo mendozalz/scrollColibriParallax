@@ -9,7 +9,7 @@ const Menu: React.FC = () => {
   };
 
   return (
-    <div className="container menuContainer">
+    <div className="menuContainer">
       <div className={`hamburguer-menu ${menuOpen ? "change" : ""}`} onClick={toggleMenu}>
         <span className="line first-line"></span>
         <span className="line second-line"></span>

@@ -75,14 +75,14 @@
   opacity: 1 !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /*&:before {
+  &:before {
      z-index:-1;
      position:absolute;
      top:0; right:0; bottom:0; left:0;
      content:'';
 
      backdrop-filter: blur(10px);
-  }*/
+  }
 }
 .mainCard #user-button .u-icons a {
   color: inherit;
@@ -416,4 +416,31 @@
 .mainCard .options .option .label .info .sub {
   transition-delay: 0.1s;
   scrollbar-width: none;
+}
+
+/* dsff */
+
+@media screen and (max-width: 478px) {
+  .show {
+    display: block !important; 
+  }
+
+  .option {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    /* display: none; */
+    pointer-events: none; /* Opcional, para evitar interacciones */
+  }
+
+  .show {
+    width: 100%;
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: all;
+  }
+
 }
