@@ -25,7 +25,7 @@ const Section2 = () => {
       }
     };
 
-    handleResize(); // Call it initially
+    handleResize(); 
     window.addEventListener('resize', handleResize);
 
     return () => {

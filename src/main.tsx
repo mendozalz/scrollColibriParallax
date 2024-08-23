@@ -6,9 +6,9 @@ import Section2 from "./components/Section2";
 import Section3 from "./components/Section3";
 import VIdeoBg from "./components/VIdeoBg";
 import Menu from "./components/Menu";
-import SectionExpandCards from "./components/SectionExpandCards";
 import ImageSlider from "./components/ImageSlider ";
 import Footer from "./components/Footer";
+import MapaSVG from "./components/MapaSVG";
 
 export function Main() {
   return (
@@ -20,8 +20,9 @@ export function Main() {
         <ImageSlider/>
         <Section2 />
         <Section3 />
+        <MapaSVG/>
         {/* <Section1 /> */}
-        <Section2 />
+        {/* <Section2 /> */}
         <VIdeoBg />
         {/* <Footer/> */}
       </div>

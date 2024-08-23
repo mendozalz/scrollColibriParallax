@@ -1,7 +1,8 @@
 import * as React from "react";
-const SVGComponent = (props) => (
+const SVGComponent = (props:any) => (
   <svg
     id="e6q4QLu9HSO1"
+    class = "SVGMAPA"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 1687 831"
