@@ -42,8 +42,8 @@ const Section2 = () => {
       <div className="bloque">
         <Parallax scale={[0.6, 1]} >
           <article className="bloq">
-            <small>Subtitle</small>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempora distinctio aliquid velit incidunt repellat quis cum impedit aperiam, natus, laudantium sed soluta voluptas. Repellat asperiores delectus dolorum sed praesentium.</p>
+            <small>Aqua Verde</small>
+            <p>Pon rumbo a tu hogar ideal en Marinilla Antioquia ahora mismo. Descubre la majestuosidad de Aqua Verde, un lugar que ofrece una experiencia de vida inigualable a un precio sumamente accesible. Explora sus encantos y encuentra el espacio perfecto para tu nuevo hogar</p>
           </article>
         </Parallax>
       </div>

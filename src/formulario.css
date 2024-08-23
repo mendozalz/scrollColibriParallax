@@ -126,6 +126,7 @@ button.red {
     font-size: 20px;
     position: relative;
     height: 70px;
+    overflow: hidden;
   }
   .segment {
     padding: 20px 0;

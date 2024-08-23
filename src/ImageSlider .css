@@ -7,7 +7,7 @@
   width: 50%;
   margin: 0 auto !important;
   position: absolute;
-  top: 10%;
+  top: 0%;
   left: 50%;
   transform: translateX(-50%);
   padding: 1.25rem;
@@ -30,7 +30,7 @@
   position: absolute;
   color: black;
   text-align: center;
-  top: 23%;
+  top: 10%;
   left: 40%;
   transform: translateX(-30%);
 }
@@ -58,10 +58,10 @@
   height: 400px;
   padding: 10px;
   height: 100vh;
-  max-height: 400px;
+  max-height: 70vh;
   z-index: 99;
   position: relative;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .containerExpandCard .cont {
@@ -152,16 +152,32 @@
   scrollbar-width: none;
 }
 
+@media only screen and (min-width:701px) and (max-width:1300px){
+  .containerExpandCard {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    height: 100vh;
+    max-height: 70vh;
+    z-index: 99;
+    position: relative;
+    margin-top: 20%;
+  }
+}
+
 @media screen and (max-width: 700px) {
+
   .containerExpandCard {
     padding: 2px;
-    margin-top: 45%;
+    margin-top: 70%;
+    max-height: 400px;
   }
   .hojas_derecha1 {
     display: none;
   }
   .banner {
     width: 90%;
+    top: 10%;
   }
   .slide {
     min-width: 5px;
@@ -197,11 +213,15 @@
     color: white;
   }
 
+  .mainCard {
+    height: 75vh;
+  }
+
   .mainCard_titulo {
     position: absolute;
     color: black;
     text-align: center;
-    top: 22%;
+    top: 25%;
     width: 100%;
     left: 0%;
     transform: translateX(0%);

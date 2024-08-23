@@ -8,6 +8,7 @@ import VIdeoBg from "./components/VIdeoBg";
 import Menu from "./components/Menu";
 import SectionExpandCards from "./components/SectionExpandCards";
 import ImageSlider from "./components/ImageSlider ";
+import Footer from "./components/Footer";
 
 export function Main() {
   return (
@@ -19,9 +20,10 @@ export function Main() {
         <ImageSlider/>
         <Section2 />
         <Section3 />
-        <Section1 />
+        {/* <Section1 /> */}
         <Section2 />
         <VIdeoBg />
+        {/* <Footer/> */}
       </div>
     </ParallaxProvider>
   );
