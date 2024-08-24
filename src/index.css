@@ -682,7 +682,7 @@ article {
           font-size: 35px;
           color: var(--verdeBg);
           overflow: hidden;
-          line-height: 20px;
+          line-height: 30px;
           height: 34px;
       }
       & h2 {
