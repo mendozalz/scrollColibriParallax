@@ -16,6 +16,12 @@ font-family: 'Lato', sans-serif;
   --Lato: "Lato", sans-serif;
 }
 
+::selection { background: var(--naranjaBg) }
+
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 body {
   margin: 0;
@@ -395,6 +401,11 @@ article {
   }
 }
 
+.MapaSvgMovil{
+  display: none;
+}
+
+
 /* Media Queries */
 
 @media screen and (min-width: 1201px) and (max-width: 1300px) {
@@ -409,6 +420,9 @@ article {
     & section {
       margin-bottom: 5%;
     }
+  }
+  .MapaSvgMovil{
+    display: none;
   }
 }
 
@@ -599,7 +613,7 @@ article {
   }
 
   article {
-    margin: 100px 0;
+    margin: 40px 0;
   }
 
   .section3_1 {
@@ -612,7 +626,7 @@ article {
 
   .section3_1_img img {
     width: 90%;
-    height: auto;
+    height: 278px;
     max-width: 900px;
     border-radius: 0 60px 60px 0;
   }
@@ -644,21 +658,41 @@ article {
 
   /*  Mapa SVG */
 
-  .MapaSvg {
+  .MapaSvg{
+    display: none;
+  }
+  
+  .MapaSvgMovil {
+    display: block;
     width: 100%;
-    height: 100vh;
-    & svg.SVGMAPA {
-      width: 225%;
-      transform: rotate(270deg);
-      margin-bottom: 5%;
+    height: 120vh;
+    position: relative;
+    z-index: 9999;
+    & svg.SVGMAPAMOVIL {
+      width: 90%;
+      margin: 5% 0 0 5%;
     }
-    & section{
-      margin: 0;
-      display: none;
-    }
-    & .MapaSvg_hojas_abajo{
+    & section {
+      width: fit-content;
+      margin: auto;
+      margin-top: 30px;
+      & h1, & h2 {
+          font-family: var(--Playfair);
+          font-size: 35px;
+          color: var(--verdeBg);
+          overflow: hidden;
+          line-height: 20px;
+          height: 34px;
+      }
+      & h2 {
+        margin-left: 25px;
+      }
+  }
+    & .MapaSvgMovil_hojas_abajo{
+      width: 100%;
       position: absolute;
       bottom: 0;
+      left: 0;
     }
   }
 }

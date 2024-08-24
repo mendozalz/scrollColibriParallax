@@ -1,5 +1,5 @@
-import viviendas1 from "../assets/viviendas_1.jpg"
-import viviendas2 from "../assets/viviendas_2.jpg"
+import viviendas1 from "../../public/FACHADA_PRINCIPAL_LATERAL.jpg"
+import viviendas2 from "../../public/FACHADA_PRINCIPAL_ACCESO.jpg"
 
 const Section3 = () => {
   return (

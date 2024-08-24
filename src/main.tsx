@@ -9,6 +9,7 @@ import Menu from "./components/Menu";
 import ImageSlider from "./components/ImageSlider ";
 import Footer from "./components/Footer";
 import MapaSVG from "./components/MapaSVG";
+import MapaSVGMovil from "./components/MapaSVGMovil";
 
 export function Main() {
   return (
@@ -21,6 +22,7 @@ export function Main() {
         <Section2 />
         <Section3 />
         <MapaSVG/>
+        <MapaSVGMovil/>
         {/* <Section1 /> */}
         {/* <Section2 /> */}
         <VIdeoBg />
