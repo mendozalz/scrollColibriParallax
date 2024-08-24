@@ -165,19 +165,23 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
   .containerExpandCard {
     padding: 2px;
     margin-top: 70%;
     max-height: 400px;
+    & .cont{
+      height: 75%;
+      margin-top: 40px;
+    }
   }
   .hojas_derecha1 {
     display: none;
   }
   .banner {
     width: 90%;
-    top: 10%;
+    top: 7%;
   }
   .slide {
     min-width: 5px;

@@ -20,7 +20,7 @@ const Section2 = () => {
       } else {
         setParallaxConfig({
           translateY: [90, -150, 'easeInOut'],
-          scale: [0.6, 1, 'easeOutBack'],
+          scale: [0.8, 1, 'easeOutBack'],
         });
       }
     };

@@ -472,12 +472,13 @@ article {
     z-index: 9;
   }
   .titulo {
-    width: 100%;
+    width: 90%;
     height: 80vh;
     display: flex;
     flex-direction: column;
     gap: 0;
     place-items: center;
+    margin: auto;
   }
 
   .hero-text {
@@ -570,7 +571,7 @@ article {
   .section2 .bloq {
     background-color: #737b1fe1;
     border-radius: 0 8vw 8vw 8vw !important;
-    padding: 40px;
+    padding: 30px;
     width: 100%;
     height: auto;
     display: grid;
@@ -665,7 +666,7 @@ article {
   .MapaSvgMovil {
     display: block;
     width: 100%;
-    height: 120vh;
+    height: 135vh;
     position: relative;
     z-index: 9999;
     & svg.SVGMAPAMOVIL {
