@@ -234,7 +234,7 @@
 
   .mainCard_titulo h2 {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 25px;
   }
 
   .mainCard_titulo p {
@@ -245,5 +245,9 @@
 
   .section2 img.hojas_abajo {
     margin-bottom: -4px;
+  }
+
+  .section3 h2 {
+    line-height: 42px;
   }
 }
