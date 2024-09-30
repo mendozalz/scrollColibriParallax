@@ -517,7 +517,7 @@ article {
   .mouseGif {
     position: absolute;
     display: block;
-    top: 14%;
+    top: 13%;
     width: 70px;
     z-index: 9;
   }
