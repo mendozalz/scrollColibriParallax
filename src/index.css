@@ -163,7 +163,7 @@ h1 {
 
 .mouseGifBlanco {
   position: absolute;
-  top: 12%;
+  top: 15.5%;
   width: 70px;
   z-index: 9;
 }
@@ -517,7 +517,7 @@ article {
   .mouseGif {
     position: absolute;
     display: block;
-    top: 13%;
+    top: 14%;
     width: 70px;
     z-index: 9;
   }
@@ -692,7 +692,7 @@ article {
     & .MapaSvgMovil_hojas_abajo{
       width: 100%;
       position: absolute;
-      bottom: 0;
+      bottom: -0.5%;
       left: 0;
     }
   }
