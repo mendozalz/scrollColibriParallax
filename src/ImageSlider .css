@@ -183,6 +183,10 @@
     width: 90%;
     top: 7%;
   }
+
+  .banner p{
+    line-height: 30px;
+  }
   .slide {
     min-width: 5px;
     width: 2px;
@@ -234,7 +238,7 @@
 
   .mainCard_titulo h2 {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
 
   .mainCard_titulo p {

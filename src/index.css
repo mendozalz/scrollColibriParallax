@@ -443,6 +443,7 @@ article {
   .hero-text {
     font-size: 1.4rem;
     width: 100%;
+    line-height: 35px;
   }
 
   .videoHeroMovil {
@@ -488,6 +489,7 @@ article {
   .hero-text {
     font-size: 1.4rem;
     width: 100%;
+    line-height: 35px;
   }
 
   .videoHeroMovil {
