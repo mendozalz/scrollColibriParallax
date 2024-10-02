@@ -1,3 +1,4 @@
+@import "./normalizer.css";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
@@ -65,6 +66,7 @@ body::-webkit-scrollbar-thumb {
 .hero-text {
   font-family: var(--Playfair);
   font-style: italic;
+  line-height: 63px;
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
@@ -233,9 +235,11 @@ h1 {
 
 .section2 small {
   font-size: 60px;
+  line-height: 75px;
 }
 .section2 p {
   font-size: 40px;
+  line-height: 50px;
 }
 .section2 .bloq {
   background-color: #737b1fe1;
@@ -564,9 +568,11 @@ article {
   .section2 small {
     font-size: 40px;
     margin-bottom: 15px;
+    line-height: 40px;
   }
   .section2 p {
     font-size: 25px;
+    line-height: 35px;
   }
   .section2 .bloq {
     background-color: #737b1fe1;
